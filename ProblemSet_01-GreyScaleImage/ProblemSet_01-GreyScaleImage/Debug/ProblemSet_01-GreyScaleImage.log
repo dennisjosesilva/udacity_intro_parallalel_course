@@ -1,0 +1,44 @@
+﻿Build started 17/08/2014 23:03:40.
+     1>Project "D:\Dennis\learning\Cuda\udacity\Homework\MyHomeWorks\ProblemSet_01-GreyScaleImage\ProblemSet_01-GreyScaleImage\ProblemSet_01-GreyScaleImage.vcxproj" on node 2 (build target(s)).
+     1>PrepareForBuild:
+         Creating directory "D:\Dennis\learning\Cuda\udacity\Homework\MyHomeWorks\ProblemSet_01-GreyScaleImage\Debug\".
+       InitializeBuildStatus:
+         Creating "Debug\ProblemSet_01-GreyScaleImage.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       AddCudaCompileDeps:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\cl.exe /E /nologo /showIncludes /TP /D__CUDACC__ /DWIN32 /D_DEBUG /D_CONSOLE /D_MBCS /I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v6.0\include" /I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v6.0\bin" /I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v6.0\include" /I. /FIcuda_runtime.h /c D:\Dennis\learning\Cuda\udacity\Homework\MyHomeWorks\ProblemSet_01-GreyScaleImage\ProblemSet_01-GreyScaleImage\kernel.cu 
+       CudaBuild:
+         Compiling CUDA source file kernel.cu...
+         cmd.exe /C "C:\Users\Dennis\AppData\Local\Temp\tmp0365c02fa90e4337a743227845882fd3.cmd"
+         "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v6.0\bin\nvcc.exe" -gencode=arch=compute_10,code=\"sm_10,compute_10\" --use-local-env --cl-version 2010 -ccbin "C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin"  -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v6.0\include" -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v6.0\include"  -G   --keep-dir Debug -maxrregcount=0  --machine 32 --compile -cudart static  -g   -DWIN32 -D_DEBUG -D_CONSOLE -D_MBCS -Xcompiler "/EHsc /W3 /nologo /Od /Zi /RTC1 /MDd  " -o Debug\kernel.cu.obj "D:\Dennis\learning\Cuda\udacity\Homework\MyHomeWorks\ProblemSet_01-GreyScaleImage\ProblemSet_01-GreyScaleImage\kernel.cu"
+         
+         D:\Dennis\learning\Cuda\udacity\Homework\MyHomeWorks\ProblemSet_01-GreyScaleImage\ProblemSet_01-GreyScaleImage>"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v6.0\bin\nvcc.exe" -gencode=arch=compute_10,code=\"sm_10,compute_10\" --use-local-env --cl-version 2010 -ccbin "C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin"  -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v6.0\include" -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v6.0\include"  -G   --keep-dir Debug -maxrregcount=0  --machine 32 --compile -cudart static  -g   -DWIN32 -D_DEBUG -D_CONSOLE -D_MBCS -Xcompiler "/EHsc /W3 /nologo /Od /Zi /RTC1 /MDd  " -o Debug\kernel.cu.obj "D:\Dennis\learning\Cuda\udacity\Homework\MyHomeWorks\ProblemSet_01-GreyScaleImage\ProblemSet_01-GreyScaleImage\kernel.cu" 
+     1>nvcc : warning : The 'compute_10' and 'sm_10' architectures are deprecated, and may be removed in a future release.
+         kernel.cu
+       ManifestResourceCompile:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\rc.exe /nologo /fo"Debug\ProblemSet_01-GreyScaleImage.exe.embed.manifest.res" Debug\ProblemSet_01-GreyScaleImage_manifest.rc 
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"D:\Dennis\learning\Cuda\udacity\Homework\MyHomeWorks\ProblemSet_01-GreyScaleImage\Debug\ProblemSet_01-GreyScaleImage.exe" /INCREMENTAL /NOLOGO /LIBPATH:"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v6.0\lib\Win32" cudart.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Debug\ProblemSet_01-GreyScaleImage.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"D:\Dennis\learning\Cuda\udacity\Homework\MyHomeWorks\ProblemSet_01-GreyScaleImage\Debug\ProblemSet_01-GreyScaleImage.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\Dennis\learning\Cuda\udacity\Homework\MyHomeWorks\ProblemSet_01-GreyScaleImage\Debug\ProblemSet_01-GreyScaleImage.lib" /MACHINE:X86 Debug\kernel.cu.obj
+         "Debug\ProblemSet_01-GreyScaleImage.exe.embed.manifest.res"
+       Manifest:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /out:"Debug\ProblemSet_01-GreyScaleImage.exe.embed.manifest" /manifest "Debug\ProblemSet_01-GreyScaleImage.exe.intermediate.manifest"
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\rc.exe /nologo /fo"Debug\ProblemSet_01-GreyScaleImage.exe.embed.manifest.res" Debug\ProblemSet_01-GreyScaleImage_manifest.rc 
+       LinkEmbedManifest:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"D:\Dennis\learning\Cuda\udacity\Homework\MyHomeWorks\ProblemSet_01-GreyScaleImage\Debug\ProblemSet_01-GreyScaleImage.exe" /INCREMENTAL /NOLOGO /LIBPATH:"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v6.0\lib\Win32" cudart.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Debug\ProblemSet_01-GreyScaleImage.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"D:\Dennis\learning\Cuda\udacity\Homework\MyHomeWorks\ProblemSet_01-GreyScaleImage\Debug\ProblemSet_01-GreyScaleImage.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\Dennis\learning\Cuda\udacity\Homework\MyHomeWorks\ProblemSet_01-GreyScaleImage\Debug\ProblemSet_01-GreyScaleImage.lib" /MACHINE:X86 Debug\kernel.cu.obj
+         "Debug\ProblemSet_01-GreyScaleImage.exe.embed.manifest.res"
+         ProblemSet_01-GreyScaleImage.vcxproj -> D:\Dennis\learning\Cuda\udacity\Homework\MyHomeWorks\ProblemSet_01-GreyScaleImage\Debug\ProblemSet_01-GreyScaleImage.exe
+       PostBuildEvent:
+         echo copy "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v6.0\bin\cudart*.dll" "D:\Dennis\learning\Cuda\udacity\Homework\MyHomeWorks\ProblemSet_01-GreyScaleImage\Debug\"
+         copy "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v6.0\bin\cudart*.dll" "D:\Dennis\learning\Cuda\udacity\Homework\MyHomeWorks\ProblemSet_01-GreyScaleImage\Debug\"
+         :VCEnd
+         copy "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v6.0\bin\cudart*.dll" "D:\Dennis\learning\Cuda\udacity\Homework\MyHomeWorks\ProblemSet_01-GreyScaleImage\Debug\"
+         C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v6.0\bin\cudart32_60.dll
+         C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v6.0\bin\cudart64_60.dll
+                 2 file(s) copied.
+       FinalizeBuildStatus:
+         Deleting file "Debug\ProblemSet_01-GreyScaleImage.unsuccessfulbuild".
+         Touching "Debug\ProblemSet_01-GreyScaleImage.lastbuildstate".
+     1>Done Building Project "D:\Dennis\learning\Cuda\udacity\Homework\MyHomeWorks\ProblemSet_01-GreyScaleImage\ProblemSet_01-GreyScaleImage\ProblemSet_01-GreyScaleImage.vcxproj" (build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:13.60
